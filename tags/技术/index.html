@@ -8,17 +8,16 @@
 
 <title>
   
-    关于我
+    标签: 技术
   
 </title>
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="https://mission-sun.github.io/sunblog/关于我/index.html">
+<meta property="og:title" content="科技小欣">
+<meta property="og:url" content="https://mission-sun.github.io/sunblog/tags/技术/index.html">
 <meta property="og:site_name" content="科技小欣">
-<meta property="og:updated_time" content="2017-03-22T06:00:20.737Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于我">
+<meta name="twitter:title" content="科技小欣">
 
 
   <link rel="alternative" href="/atom.xml" title="科技小欣" type="application/atom+xml">
@@ -150,49 +149,98 @@
       
         <div style="max-width: 1000px">
       
-          <article id="page-undefined" class="article article-type-page">
+          <h1>技术</h1>
+
+
   
-    <h1 class="article-header">
-      关于我
-    </h1>
   
+    <div class="post-list">
   
 
-  <div class="article-info">
-    <span class="article-date">
-  2017-03-22
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/sunblog/2017/03/23/Hexo搭建Github静态博客/" >
+  Hexo搭建Github静态博客
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/sunblog/2017/03/23/Hexo搭建Github静态博客/"><span class="article-date">
+  2017-03-23
 </span>
-
-    
-
-    
-
-  </div>
-  <div class="article-entry">
-    
-  </div>
-  <footer class="article-footer">
-    
-  <div class="cc">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.z" target="_blank" title="署名-相同方式共享">
-      <img src="/sunblog/images/cc/cc.png">
-      
-          <img src="/sunblog/images/cc/by.png">
+</a>
         
-          <img src="/sunblog/images/cc/sa.png">
-      
-      <span>
-        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
-      </span>
-    </a>
-  </div>
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/sunblog/categories/技术类/">技术类</a></li></ul>
+	</span>
 
 
-    
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/sunblog/tags/技术/">技术</a></li></ul>
+	</span>
 
-  </footer>
-</article>
 
+      </div>
+      <div class="article-entry">
+        
+          <ol>
+<li><p>环境环境<br> 1.1 安装Git<br> 1.2 安装node.js</p>
+<p> 上述环境我就不写了，比较简单！</p>
+</li>
+<li><p>安装Hexo<br> 打开Git命令行，执行如下命令</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo</div><div class="line">$ hexo init</div><div class="line">npm install</div><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<ol>
+<li>安装主题<br>$ git clone <a href="https://github.com/A-limon/pacman.git" target="_blank" rel="external">https://github.com/A-limon/pacman.git</a> themes/pacman<br>修改你的博客根目录/D/Hexo下的config.yml配置文件中的theme属性，将其设置为pacman</li>
+<li>然后就是把博客搭建到搭建github</li>
+</ol>
+</li>
+</ol>
+<pre><code>常用的hexo执行程序
+{% codeblock %}
+     	hexo n == hexo new
+		hexo g == hexo generate
+		hexo s == hexo server
+		hexo d == hexo deploy{% endcodeblock %}
+
+
+
+
+
+
+第二部分
+      介绍如何把自己做的项目放到github上 虽然这跟上边的差不多，但是还是有
+      点区别的
+
+    下边我把核心内容记录下来，方便自己查阅
+1、创建一个本地项目
+    本地项目的文件夹名字任意
+2、建立本地仓库
+    执行{% codeblock %}git init{% endcodeblock %}
+    初始化成功后你会发现项目里多了一个隐藏文件夹.git
+3、将自己的文件放到自己建立的文件项目中
+    执行{% codeblock %}git add .{% endcodeblock %}
+    注意的是上边是个点 ，不要拉掉
+ 4、然后，把文件提交到仓库，双引号内是提交注释
+    执行{% codeblock %} git commit -m "提交文件"{% endcodeblock %}
+
+    本地建立好网站之后，我们需要关联github仓库
+    到github上仓库复制我们需要的地址（ssh）
+    然后执行{% codeblock %} git remote add origin  仓库地址{% endcodeblock %}
+    上传代码
+    执行{% codeblock %}git push -u origin master{% endcodeblock %}
+    如果上边的程序执行错误的话我们需要执行下边的程序
+    {% codeblock %} git push -f origin master {% endcodeblock %}
+</code></pre>
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
 
 
 
