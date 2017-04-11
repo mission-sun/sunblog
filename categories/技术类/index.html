@@ -158,7 +158,14 @@
       </div>
       <div class="article-entry">
         
-          <h3 id="transform-origin-变形原点"><a href="#transform-origin-变形原点" class="headerlink" title="transform-origin(变形原点)"></a>transform-origin(变形原点)</h3>
+          <h3 id="transform-origin-变形原点"><a href="#transform-origin-变形原点" class="headerlink" title="transform-origin(变形原点)"></a>transform-origin(变形原点)</h3><p>1、改变元素基点transform-origin<br>   transform-origin是变形原点，也就是该元素围绕着那个点变形或旋转，该属性只有在设置了transform属性的时候起作用；</p>
+<p>   因为我们元素默认基点就是其中心位置，换句话说我们没有使用transform-origin改变元素基点位置的情况下，transform进行的rotate,translate,scale,skew,matrix等操作都是以元素自己中心位置进行变化的。</p>
+<p>   但有时候我们需要在不同的位置对元素进行这些操作，那么我们就可以使用transform-origin来对元素进行基点位置改变，使元素基点不在是中心位置，以达到你需要的基点位置。</p>
+<h3 id="下面我们主要来看看其使用规则："><a href="#下面我们主要来看看其使用规则：" class="headerlink" title="下面我们主要来看看其使用规则："></a>下面我们主要来看看其使用规则：</h3><p>   transform-origin(X,Y):用来设置元素的运动的基点（参照点）。默认点是元素的中心点。其中X和Y的值可以是百分值,em,px，其中X也可以是字符参数值left,center,right；Y和X一样除了百分值外还可以设置字符值top,center,bottom </p>
+<p>   transform-origin接受两个参数，它们可以是百分比，em，px等具体的值，也可以是left,center,right，或者 top,center,bottom等描述性参数 ;</p>
+<p>   left,center right是水平方向取值，对应的百分值为</p>
+<h3 id="left-0-center-50-right-100-而top-center-bottom是垂直方向的取值，其中top-0-center-50-bottom-100"><a href="#left-0-center-50-right-100-而top-center-bottom是垂直方向的取值，其中top-0-center-50-bottom-100" class="headerlink" title="left=0%;center=50%;right=100%而top center bottom是垂直方向的取值，其中top=0%;center=50%;bottom=100%;"></a>left=0%;center=50%;right=100%而top center bottom是垂直方向的取值，其中top=0%;center=50%;bottom=100%;</h3><p>   如果只取一个值，表示垂直方向值不变。<br>  注：<br>  transform-origin并不是transform中的属性值，他具有自己的语法。<br>  但是他要结合transform才能起作用。</p>
+
         
       </div>
     </div>
